@@ -81,9 +81,9 @@ public class Ws2801 implements AutoCloseable {
     }
 
     Ws2801(SpiDevice device, ColorUnpacker colorUnpacker, Direction direction) throws IOException {
+        this.device = device;
         this.colorUnpacker = colorUnpacker;
         this.direction = direction;
-        this.device = device;
         configure(device);
     }
 
