@@ -6,7 +6,6 @@ import android.graphics.Color;
 
 class ColorUnpacker {
 
-    // RGB LED strip configuration that must be provided by the caller.
     private final Mode ledMode;
 
     ColorUnpacker(Mode ledMode) {
