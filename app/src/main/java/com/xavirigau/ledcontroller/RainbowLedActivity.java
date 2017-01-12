@@ -1,5 +1,7 @@
 package com.xavirigau.ledcontroller;
 
+import com.xrigau.driver.ws2801.Ws2801;
+
 import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -14,7 +16,7 @@ public class RainbowLedActivity extends Activity {
 
     private static final String TAG = RainbowLedActivity.class.getSimpleName();
     private static final int FRAME_DELAY_MS = 15;
-    private static final int NUM_LEDS = 5;
+    private static final int NUM_LEDS = 1;
 
     private final int[] mLedColors = new int[NUM_LEDS];
 
@@ -35,7 +37,7 @@ public class RainbowLedActivity extends Activity {
 
         try {
             Log.d(TAG, "Initializing LED strip");
-            mLedstrip = new Ws2801(BoardDefaults.getSPIPort(), Ws2801.Mode.RBG);
+            mLedstrip = Ws2801.create(BoardDefaults.getSPIPort(), Ws2801.Mode.RBG);
             mHandler.post(mAnimateRunnable);
 //            mLedstrip.write(new int[]{Color.BLACK}); // Uncomment this line and comment the previous one to turn off
         } catch (IOException e) {

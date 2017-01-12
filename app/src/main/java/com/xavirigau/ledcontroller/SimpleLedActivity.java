@@ -1,5 +1,7 @@
 package com.xavirigau.ledcontroller;
 
+import com.xrigau.driver.ws2801.Ws2801;
+
 import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -18,7 +20,7 @@ public class SimpleLedActivity extends Activity {
         super.onCreate(savedInstanceState);
 
         try {
-            mLedstrip = new Ws2801(BoardDefaults.getSPIPort(), Ws2801.Mode.RGB);
+            mLedstrip = Ws2801.create(BoardDefaults.getSPIPort(), Ws2801.Mode.RGB);
             mLedstrip.write(new int[]{Color.parseColor("#0face0")});
             Log.d(TAG, "Done!");
         } catch (IOException e) {
