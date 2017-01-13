@@ -1,1 +1,1 @@
-include ':app', ':ws2801-driver'
+include ':demo-app', ':ws2801-driver'
