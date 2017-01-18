@@ -7,7 +7,9 @@ The driver can be found in the `ws2801-driver` module and there's a demo app sho
 
 Only tested with a Raspberry Pi 3 but should work in more devices.
 
-Schematics as shown in https://github.com/androidthings/drivers-samples/blob/master/apa102/rpi3_schematics.png
+### Schematics
+
+![raspberry pi 3 schematics](rpi3-schematics.png)
 
 
 More on the WS2801: https://cdn-shop.adafruit.com/datasheets/WS2801.pdf
