@@ -27,6 +27,8 @@ class ColorUnpacker {
 
     static byte[] getOrderedRgbBytes(Mode ledMode, byte r, byte g, byte b) {
         switch (ledMode) {
+            case RGB:
+                return new byte[]{r, g, b};
             case RBG:
                 return new byte[]{r, b, g};
             case BGR:
