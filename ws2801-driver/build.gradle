@@ -33,7 +33,7 @@ publish {
   userOrg = 'xrigau'
   groupId = 'com.xrigau'
   artifactId = 'ws2801-driver'
-  publishVersion = '0.0.1'
+  publishVersion = '0.0.2'
   desc = 'Android Things driver for the WS2801 RGB LED strip.'
   website = 'https://github.com/xrigau/androidthings-ws2801-driver'
 }
