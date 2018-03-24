@@ -1,9 +1,9 @@
 package com.xrigau.driver.ws2801;
 
-import com.google.android.things.pio.PeripheralManagerService;
-import com.google.android.things.pio.SpiDevice;
-
 import android.graphics.Color;
+
+import com.google.android.things.pio.PeripheralManager;
+import com.google.android.things.pio.SpiDevice;
 
 import java.io.IOException;
 
@@ -72,7 +72,7 @@ public class Ws2801 implements AutoCloseable {
      * @param direction  The {@link Direction} or the LED strip.
      */
     public static Ws2801 create(String spiBusPort, Mode ledMode, Direction direction) throws IOException {
-        PeripheralManagerService pioService = new PeripheralManagerService();
+        PeripheralManager pioService = PeripheralManager.getInstance();
         try {
             return new Ws2801(pioService.openSpiDevice(spiBusPort), new ColorUnpacker(ledMode), direction);
         } catch (IOException e) {
