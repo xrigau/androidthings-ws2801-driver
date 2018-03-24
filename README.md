@@ -17,7 +17,7 @@ The driver is now available on jCenter so you can include it as a gradle depende
 
 ```groovy
 dependencies {
-  compile 'com.xrigau:ws2801-driver:0.0.3'
+  compile 'com.xrigau:ws2801-driver:0.0.5'
 }
 ```
 
