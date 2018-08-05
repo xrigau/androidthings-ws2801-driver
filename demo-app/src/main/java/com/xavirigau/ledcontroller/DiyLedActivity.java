@@ -1,18 +1,18 @@
 package com.xavirigau.ledcontroller;
 
-import static android.content.ContentValues.TAG;
-
-import com.google.android.things.pio.PeripheralManagerService;
-import com.google.android.things.pio.SpiDevice;
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
+
+import com.google.android.things.pio.PeripheralManagerService;
+import com.google.android.things.pio.SpiDevice;
 
 import java.io.IOException;
 
 // Works with LED strip WS2801
 public class DiyLedActivity extends Activity {
+
+    private static final String TAG = DiyLedActivity.class.getSimpleName();
 
     private SpiDevice mDevice;
 
@@ -37,10 +37,8 @@ public class DiyLedActivity extends Activity {
         device.setBitsPerWord(8);
     }
 
-
     // Half-duplex data transfer
     public void sendCommand(SpiDevice device, byte[] buffer) throws IOException {
-        Log.e("YOLO", "I'm sending");
         device.write(buffer, buffer.length);
     }
 

@@ -1,17 +1,17 @@
 package com.xavirigau.ledcontroller;
 
-import com.xrigau.driver.ws2801.Ws2801;
-
 import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 
+import com.xrigau.driver.ws2801.Ws2801;
+
 import java.io.IOException;
 
 public class SimpleLedActivity extends Activity {
 
-    private static final String TAG = RainbowLedActivity.class.getSimpleName();
+    private static final String TAG = SimpleLedActivity.class.getSimpleName();
 
     private Ws2801 mLedstrip;
 
