@@ -4,7 +4,7 @@ This repo contains the Android Things driver to control an LED strip based on th
 
 The driver can be found in the `ws2801-driver` module and there's a demo app showing how to use the driver in the `demo-app` module.
 
-Only tested with a Raspberry Pi 3 but should work in more devices.
+Only tested with a Raspberry Pi 3 but should work with other devices too.
 
 ## Schematics
 
@@ -17,7 +17,7 @@ The driver is now available on jCenter so you can include it as a gradle depende
 
 ```groovy
 dependencies {
-  compile 'com.xrigau:ws2801-driver:0.0.5'
+  compile 'com.xrigau:ws2801-driver:1.0.0'
 }
 ```
 
