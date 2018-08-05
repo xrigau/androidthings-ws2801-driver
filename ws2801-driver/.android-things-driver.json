@@ -1,0 +1,19 @@
+{
+  "title": "ws2801-driver",
+  "category": "driver",
+  "samples": [
+    "https://github.com/xrigau/androidthings-ws2801-driver/tree/master/demo-app"
+  ],
+  "published-maven": {
+    "maven-url": "https://bintray.com/xrigau/maven/ws2801-driver/1.0.0",
+    "groupid": "com.xrigau",
+    "artifactid": "ws2801-driver"
+  },
+  "compatible-with": [
+    {
+      "title": "WS2801-based LED strip",
+      "photo": "https://cdn.sparkfun.com//assets/parts/4/7/1/9/10312-00.jpg",
+      "url": "https://www.adafruit.com/product/322"
+    }
+  ]
+}
